@@ -1,0 +1,74 @@
+.nav {
+    background: linear-gradient(90deg, #e9e3f7 0%, #f6f4fb 100%);
+    color: #6d5c90;
+    padding: 0.1rem 0.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 1.5rem;
+    animation: fadeInNav 0.7s cubic-bezier(0.4,0,0.2,1) forwards;
+    margin: 4.5rem auto;
+    max-width: 900px;
+    width: 100%;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 2rem 2rem;
+    margin: 0 auto;
+    display: flex;
+    gap: 5.5rem;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.nav ul li {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.15rem;
+    letter-spacing: 0.03em;
+    position: relative;
+    transition: color 0.3s, transform 0.2s;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.7rem;
+    background: linear-gradient(90deg, rgba(211,184,255,0.08) 0%, rgba(255,255,255,0.03) 100%);
+    box-shadow: 0 1px 6px 0 rgba(211,184,255,0.10);
+}
+
+.nav ul li::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    bottom: 0.2rem;
+    height: 3px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #d3b8ff 0%, #fff 100%);
+    opacity: 0;
+    transform: scaleX(0.5);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.nav ul li:hover {
+    color: #fff;
+    background: linear-gradient(90deg, #d3b8ff 0%, #a084ca 100%);
+    box-shadow: 0 2px 12px 0 rgba(211,184,255,0.18);
+    transform: translateY(-3px) scale(1.07);
+    text-shadow: 0 0 8px #d3b8ff, 0 0 2px #fff;
+}
+
+.nav ul li:hover::after {
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+/* Nav fade in animation */
+@keyframes fadeInNav {
+    from {
+        opacity: 0;
+        transform: translateY(-25px) scale(0.98);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

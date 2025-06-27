@@ -1,0 +1,75 @@
+.testimonial-section {
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #d3b8ff, #f6f0ff);
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #3f3351;
+}
+
+.testimonial-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 10px 20px rgba(92, 72, 162, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
+  animation: fadeInTestimonial 0.7s ease forwards;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(92, 72, 162, 0.3);
+}
+
+.testimonial-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #a084ca;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #5a4e7c;
+}
+
+.testimonial-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.testimonial-role {
+  font-size: 0.9rem;
+  color: #7a6e9e;
+}
+
+/* Fade in animation */
+@keyframes fadeInTestimonial {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

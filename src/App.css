@@ -1,0 +1,173 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f6ff;
+}
+
+body {
+  background-color: #f6f0ff;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-container {
+  min-height: 200vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #f8f6ff 0%, #e5d6fa 100%);
+  position: relative;
+  /* Remove padding-bottom, not needed with flexbox sticky footer */
+}
+
+.top-nav {
+  position: fixed;
+  top: 24px;
+  right: 48px;
+  display: flex;
+  gap: 28px;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
+  padding: 12px 28px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(90, 42, 120, 0.10);
+  backdrop-filter: blur(4px);
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #5f2c82;
+  font-weight: 600;
+  font-size: 1.05rem;
+  letter-spacing: 0.02em;
+  transition: color 0.3s, transform 0.3s;
+  position: relative;
+  padding: 4px 0;
+}
+
+.top-nav a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -3px;
+  left: 0;
+  background: linear-gradient(90deg, #a4508b, #5f2c82);
+  transition: width 0.3s;
+  border-radius: 2px;
+}
+
+.top-nav a:hover::after {
+  width: 100%;
+}
+
+.top-nav a:hover {
+  color: #a4508b;
+  transform: scale(1.07);
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 120px;
+  text-align: center;
+}
+
+
+
+/* Card */
+.card {
+  padding: 2em;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(90, 42, 120, 0.07);
+  margin-bottom: 24px;
+}
+
+
+ .site-footer{
+  position: relative;
+  width: 100%;
+  padding: 18px 0;
+  text-align: center;
+  background: linear-gradient(90deg, #df8ef1, #5f386d);
+  color: #fff;
+  font-size: 1rem;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-shadow: 0 -2px 12px rgba(90, 42, 120, 0.07);
+  margin-top: auto;
+}
+
+/* Utility */
+.read-the-docs {
+  color: #888;
+  font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .top-nav {
+    right: 16px;
+    left: 16px;
+    justify-content: center;
+    padding: 10px 8px;
+    gap: 18px;
+  }
+  .main-content {
+    padding-top: 90px;
+  }
+  .title {
+    font-size: 2.1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #root, .app-container {
+    padding: 0.5rem;
+  }
+  .main-content {
+    padding-top: 70px;
+  }
+  .site-footer {
+    font-size: 0.9rem;
+    padding: 12px 0;
+    border-radius: 0;
+  }
+}
+.site-footer {
+  background-color: #fce4ec;
+  padding: 25px 0;
+  text-align: center;
+  color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  border-top: 2px solid #f8bbd0;
+}
+
+.site-footer a {
+  color: #f7f3f5;
+  margin: 0 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}

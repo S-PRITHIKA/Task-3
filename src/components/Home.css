@@ -1,0 +1,99 @@
+.home {
+    padding: 3rem  1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #3a2c5a;
+    background: linear-gradient(120deg, #f8f6ff 0%, #e5d6fa 100%);
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: fadeInHome 1s ease forwards;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(60, 40, 120, 0.08);
+    margin: 2rem auto;
+    max-width: 700px;
+}
+
+.home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1.5px;
+    font-weight: 800;
+    color: #6c4ab6;
+    text-shadow: 0 2px 8px #e5d6fa;
+}
+
+.home p {
+    font-size: 1.15rem;
+    max-width: 600px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #5a4e7c;
+    background: rgba(255,255,255,0.7);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(108, 74, 182, 0.04);
+}
+
+/* Home fade in */
+@keyframes fadeInHome {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.home {
+  padding: 2rem;
+  text-align: center;
+  background: #ebcafc;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 200px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #fff0f5;
+}
+
+.home-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.home-buttons a {
+  padding: 12px 24px;
+  background-color: #ff69b4;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.home-buttons a:hover {
+  background-color: #ff1493;
+}

@@ -1,0 +1,55 @@
+.product-card {
+  border-radius: 12px;
+  background: #ebdbf7;
+  box-shadow: 0 10px 20px rgba(92, 72, 162, 0.15);
+  padding: 1rem;
+  width: 200px;
+  margin: 5rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+  animation: fadeInProduct 0.7s ease forwards;
+}
+
+.product-card:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 25px rgba(92, 72, 162, 0.35);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 3rem;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover img {
+  transform: scale(1.1);
+}
+
+.product-card h3 {
+  font-weight: 700;
+  color: #5a4e7c;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #7a6e9e;
+}
+
+/* Product card fade in */
+@keyframes fadeInProduct {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
